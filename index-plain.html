@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Babu Kolla | Staff Software Engineer & AI Expert</title>
+    <meta name="description" content="Portfolio of Naveen Babu Kolla - Staff Software Engineer specializing in AI integration, enterprise software, and industrial automation">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Naveen Babu Kolla | Staff Software Engineer & AI Expert" />
+    <meta property="og:description" content="Portfolio of Naveen Babu Kolla - Staff Software Engineer specializing in AI integration, enterprise software, and industrial automation" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles-plain.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <button onclick="scrollToSection('home')" class="nav-brand">HOME</button>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <button onclick="scrollToSection('skills')" class="nav-link">Skills</button>
+                <button onclick="scrollToSection('experience')" class="nav-link">Experience</button>
+                <button onclick="scrollToSection('awards')" class="nav-link">Awards</button>
+                <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button onclick="scrollToSection('skills')" class="mobile-nav-link">Skills</button>
+            <button onclick="scrollToSection('experience')" class="mobile-nav-link">Experience</button>
+            <button onclick="scrollToSection('awards')" class="mobile-nav-link">Awards</button>
+            <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 22h16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-text">#OpentoWork</span>
+                </div>
+                
+                <!-- Profile Photo -->
+                <div class="profile-photo-container">
+                    <div class="profile-photo-wrapper">
+                        <img src="/myphoto.png" alt="Naveen Babu Kolla" class="profile-photo">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">Naveen Babu Kolla</h1>
+                
+                <p class="hero-subtitle">Staff Software Engineer</p>
+                
+                <p class="hero-description">
+                    AI Expert & Frontend Lead with 15 years of experience in enterprise software development, 
+                    industrial automation, and digital transformation
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Get In Touch
+                    </button>
+                    
+                    <button class="btn btn-outline" onclick="window.open('https://linkedin.com/in/naveen-babu-84a71744', '_blank')">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect width="4" height="12" x="2" y="9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="4" cy="4" r="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        LinkedIn
+                    </button>
+                </div>
+                
+                <div class="hero-skills">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">MES</span>
+                    <span class="skill-tag">Industrial Automation</span>
+                    <span class="skill-tag">Workflow Automation n8n</span>
+                    <span class="skill-tag">GE Proficy</span>
+                    <span class="skill-tag">Node Js</span>
+                    <span class="skill-tag">Node-Red</span>
+                    <span class="skill-tag">AI Integration</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gradient orbs -->
+        <div class="gradient-orb gradient-orb-1"></div>
+        <div class="gradient-orb gradient-orb-2"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            
+            <div class="skills-grid">
+                <!-- AI Integration -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2a2 2 0 0 0-2 2c0 .74.4 1.39 1 1.73V7a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5.73c.6-.34 1-.99 1-1.73a2 2 0 0 0-4 0c0 .74.4 1.39 1 1.73V7h-7V5.73c.6-.34 1-.99 1-1.73a2 2 0 0 0-2-2Z" stroke-width="2"/>
+                            <path d="M14 12h5a2 2 0 0 1 2 2v1.73c.6.34 1 .99 1 1.73a2 2 0 1 1-4 0c0-.74.4-1.39 1-1.73V14h-5v1.73c.6.34 1 .99 1 1.73a2 2 0 1 1-4 0c0-.74.4-1.39 1-1.73V14a2 2 0 0 1 2-2Z" stroke-width="2"/>
+                            <path d="M3 19a2 2 0 1 0 4 0c0-.74-.4-1.38-1-1.72V14h3v2.28c-.6.35-1 .98-1 1.72a2 2 0 1 0 4 0c0-.74-.4-1.38-1-1.72V14a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3.28c-.6.35-1 .98-1 1.72Z" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI Integration</h3>
+                    <p class="card-description">Expert in integrating AI/ML capabilities into enterprise applications, including Claude Code integration and intelligent automation systems</p>
+                </div>
+
+                <!-- Enterprise Software -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2" stroke-width="2"/>
+                            <path d="M9 22v-4h6v4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 6h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 10h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 14h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 10h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 14h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 10h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 14h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Enterprise Software</h3>
+                    <p class="card-description">15+ years developing scalable enterprise applications with Angular, TypeScript, and modern web technologies</p>
+                </div>
+
+                <!-- Industrial Automation -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Industrial Automation</h3>
+                    <p class="card-description">Specialized in MES systems, GE Proficy, and industrial IoT solutions for manufacturing environments</p>
+                </div>
+
+                <!-- Frontend Architecture -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Frontend Architecture</h3>
+                    <p class="card-description">Leading frontend development with Angular, creating scalable architectures and reusable component libraries</p>
+                </div>
+
+                <!-- Workflow Automation -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Workflow Automation</h3>
+                    <p class="card-description">Designing and implementing automated workflows using n8n, Node-RED, and custom solutions</p>
+                </div>
+
+                <!-- Digital Transformation -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Digital Transformation</h3>
+                    <p class="card-description">Leading digital transformation initiatives, modernizing legacy systems and implementing cutting-edge solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            
+            <div class="timeline">
+                <!-- GE Healthcare -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Staff Software Engineer</h3>
+                                <p class="timeline-company">GE Healthcare</p>
+                            </div>
+                            <span class="timeline-period">2010 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Leading enterprise-level software development with focus on AI integration, industrial automation, 
+                            and digital transformation. Driving innovation in manufacturing execution systems and healthcare technology.
+                        </p>
+                        <div class="timeline-highlights">
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="20 6 9 17 4 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Led AI integration projects using Claude and custom ML models</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="20 6 9 17 4 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Architected scalable Angular applications for manufacturing systems</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="20 6 9 17 4 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Implemented workflow automation using n8n and Node-RED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section" id="awards">
+        <div class="container">
+            <h2 class="section-title">Recognition & Certifications</h2>
+            
+            <div class="awards-grid">
+                <!-- Awards -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 22h16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">GE Healthcare All Stars Award 2024</h3>
+                    <p class="card-meta">GE Healthcare • 2024</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="8" r="6" stroke-width="2"/>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Brilliance Award</h3>
+                    <p class="card-meta">GE Healthcare • 2017</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Most Valuable Contributor</h3>
+                    <p class="card-meta">GE Healthcare • 2012</p>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 22h2a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14 2 14 8 20 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="16" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 17.5 8 16.25V14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Prompt Engineering for ChatGPT</h3>
+                    <p class="card-meta">Vanderbilt University • Coursera</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 6v4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14h-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 18h-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 8h-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Generative AI: Elevate Your Learning</h3>
+                    <p class="card-meta">LinkedIn Learning</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7.5 4.21 12 6.81 16.5 4.21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7.5 19.79 7.5 14.6 3 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="21 12 16.5 14.6 16.5 19.79" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" x2="12" y1="22.08" y2="12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI & Workflow Automation</h3>
+                    <p class="card-meta">Multiple platforms including n8n, Node-RED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Open to exciting opportunities in AI, enterprise software, and digital transformation</p>
+            
+            <div class="contact-grid">
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Email</h3>
+                    <a href="mailto:nabukolla@gmail.com" class="card-link">nabukolla@gmail.com</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Phone</h3>
+                    <a href="tel:+919886123465" class="card-link">+91 9886123465</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Location</h3>
+                    <p class="card-value">Bangalore, India</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect width="4" height="12" x="2" y="9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="4" cy="4" r="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">LinkedIn</h3>
+                    <a href="https://linkedin.com/in/naveen-babu-84a71744" target="_blank" class="card-link">Connect on LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3 class="cta-title">Ready to Collaborate?</h3>
+                <p class="cta-description">
+                    With 15 years of experience in cutting-edge technology, I'm passionate about driving innovation 
+                    and delivering exceptional results. Let's discuss how we can work together.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='mailto:nabukolla@gmail.com'">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Send Email
+                    </button>
+                    <button class="btn btn-outline" onclick="window.open('https://linkedin.com/in/naveen-babu-84a71744', '_blank')">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect width="4" height="12" x="2" y="9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="4" cy="4" r="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Naveen Babu Kolla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script-plain.js"></script>
+</body>
+</html>
