@@ -11,7 +11,20 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 backdrop-blur-sm border border-primary/20 mb-6">
             <Award className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Available for opportunities</span>
+            <span className="text-sm text-muted-foreground">#OpentoWork</span>
+          </div>
+          
+          {/* Profile Photo */}
+          <div className="mb-8">
+            <div className="relative mx-auto w-48 h-48 md:w-56 md:h-56">
+              <img
+                src="/myphoto.png"
+                alt="Naveen Babu Kolla"
+                className="w-full h-full object-cover rounded-full border-4 border-primary/20 shadow-2xl hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)] transition-all duration-300 bg-secondary/20"
+              />
+              {/* Animated ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-pulse" />
+            </div>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
@@ -49,7 +62,7 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-wrap gap-3 justify-center text-sm">
-            {['AI Integration', 'Angular', 'TypeScript', 'OpenAI', 'GE Proficy'].map((skill, i) => (
+            {['Angular', 'TypeScript', 'MES', 'Industrial Automation', 'Workflow Automation n8n', 'GE Proficy', 'Node Js', 'Node-Red','AI Integration'].map((skill, i) => (
               <span 
                 key={skill}
                 className="px-4 py-2 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300"
