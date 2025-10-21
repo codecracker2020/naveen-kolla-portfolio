@@ -22,7 +22,7 @@ const Navigation = () => {
   };
 
   const navLinks = [
-    { label: "Home", id: "home" },
+    // { label: "Home", id: "home" },
     { label: "Skills", id: "skills" },
     { label: "Experience", id: "experience" },
     { label: "Awards", id: "awards" },
@@ -43,7 +43,7 @@ const Navigation = () => {
             onClick={() => scrollToSection("home")}
             className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            NBK
+            HOME
           </button>
 
           {/* Desktop Navigation */}
